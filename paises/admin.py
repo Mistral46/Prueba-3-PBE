@@ -4,3 +4,13 @@ from django.contrib import admin
 from .models import Pais
 
 admin.site.register(Pais)
+
+@admin.register(Pais)
+class PaisAdmin(admin.ModelAdmin):
+    lis_display = [ 'nombre',
+                    'coloresBandera',
+                    'fundacion',
+                    'diaNacional',
+                    'baileNacional',
+                    'animalNacional',
+    ]

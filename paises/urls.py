@@ -6,5 +6,10 @@ router = routers.DefaultRouter()
 router.register(r'pais',views.PaisViewSet)
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls)),
+    path('getPais/', views.getPais),
+    path('postPais/', views.postPais),
+    path('updatePais/', views.updatePais),
+    path('deletePais/', views.deletePais),
+
 ]
