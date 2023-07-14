@@ -9,3 +9,5 @@ class Pais (models.Model):
     baileNacional = models.CharField(max_length=100)
     animalNacional = models.CharField(max_length=100)
 
+def __str__(self):
+    return self.body
